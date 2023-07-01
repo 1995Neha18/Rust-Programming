@@ -1,25 +1,3 @@
-// struct Temperature {
-//     degrees_f: f64,
-// }
-
-// impl Temperature {
-//     fn freezing() -> Self {
-//         Self { degrees_f: 32.0 }
-//     }
-
-//     fn show_temp(&self){
-//         println!("{:?} degrees F", self.degrees_f);
-//     }
-// }
-
-// fn main() {
-//     let hot = Temperature {degrees_f: 99.9};
-//     hot.show_temp();
-
-//     let cold = Temperature::freezing();
-//     cold.show_temp();
-// }
-
 struct Dimensions {
     width: u32,
     height: u32,
@@ -72,7 +50,7 @@ impl ShippingBox {
 
 fn main() {
     let small_dimensions = Dimensions { width: 10, height: 15, depth: 20 };
-   
+
     let small_box = ShippingBox::new(10, Color::Red, small_dimensions);
     small_box.print();
 }
